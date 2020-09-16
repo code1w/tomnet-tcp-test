@@ -67,6 +67,7 @@ namespace server
                     byte[] msgbyte = System.Text.Encoding.Default.GetBytes(msg);
                     buf.Write(msgbyte, 0 , msg.Length);
                     totallen += msglen + sizeof(int);
+                    Console.WriteLine(" Packet len :" + msglen);
                 }
                 buildpacket = false;
                 initpacket = true;
@@ -98,7 +99,7 @@ namespace server
             }
             else
             {
-                BuildPacket(Packlen);
+               // BuildPacket(Packlen);
             }
         }
 
@@ -159,7 +160,7 @@ namespace server
                     stop = true;
                     return;
                 }
-                Console.WriteLine("Send len : " + sendlen);
+                //Console.WriteLine("Send len : " + sendlen);
 
             }
         }

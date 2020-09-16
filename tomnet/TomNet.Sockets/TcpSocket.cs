@@ -271,7 +271,7 @@ namespace TomNet.Sockets
             byte[] dbytes = new byte[len];
             Buffer.BlockCopy(data.Begin(), data.PrependableBytes(), dbytes, 0, data.Readable());
             string str = System.Text.Encoding.Default.GetString(dbytes);
-            Console.WriteLine($"packet len : " + len);
+            Console.WriteLine(" Packet len : " + len);
         }
 
         private void ConfigureTcpSocket(Socket tcpSocket)

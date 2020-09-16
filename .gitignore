@@ -2,3 +2,6 @@
 .git
 build
 bin
+tomnet/obj
+tomnet-test/client/obj/
+tomnet-test/server/obj/
